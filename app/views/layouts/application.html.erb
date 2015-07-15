@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font-family: 'Tangerine', serif;
+      font-size: 48px;
+      font-weight: lighter;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="menu col-xs-8">
+          <ul> <li><a href="/">Welcome</a></li> 
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="https://medium.com/about-codecademy">Blog</a></li>
+            <li><a href="about">About</a></li> 
+            <li><a href="contact">Contact</a></li> 
+          </ul> 
+        </div> 
+        
+        <div class="name col-xs-4"> 
+          <h1>Matt Healy</h1> 
+        </div> 
+      </div>
+    </div> 
+  </div>
+
+	<%= yield %>
+  
+	<div class="footer"> 
+    <div class="container"> 
+      <ul class="social_media"> 
+        <li><a class="github" href="#">github</a></li> 
+        <li><a class="linkedin" href="#">linkedin</a></li> 
+        <li><a class="twitter" href="#">twitter</a></li> 
+      </ul> <p>&copy; 2015 Matt Healy</p> 
+    </div> 
+  </div>
+</body>
+</html>
