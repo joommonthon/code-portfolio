@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require unslider.min
+//= require jquery-latest.min
 //= require_tree .
