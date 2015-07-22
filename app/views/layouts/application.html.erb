@@ -10,10 +10,21 @@
       font-size: 48px;
       font-weight: lighter;
     }
+    .banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+    .banner ul li { float: left; }
   </style>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  
+  <script>
+    $(function() {
+      $('.banner').unslider();
+    });
+  </script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
   <div class="header">
