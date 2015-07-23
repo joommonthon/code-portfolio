@@ -1,1 +1,1 @@
-alert('Yes this is javascript');
+/* alert('Yes this is javascript'); */
