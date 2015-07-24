@@ -25,7 +25,10 @@
     <div class="container">
       <div class="row">
         <div class="menu col-xs-8">
-          <ul> <li><a href="/">Welcome</a></li> 
+          <ul> 
+            <li>
+            	<%=link_to 'Welcome', welcome_path()%>
+            </li> 
             <li>
               <%=link_to 'Portfolio', portfolio_path()%>
             </li>
